@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   display: flex;
   font-family: sans-serif;
-
+  flex-wrap: wrap-reverse;
   padding-top: 80px;
 }
 
@@ -430,7 +430,10 @@ section {
     transform: translateY(0);
     transition: transform 0.5s ease;
 }
-
+.row{
+   margin-left: 25%;
+   margin-right: 23%;
+}
 .featured-services .icon-box::before {
   content: '';
   position: absolute;
@@ -694,7 +697,11 @@ section {
 .counts {
   padding-bottom: 30px;
 }
+.row_count{
+  margin-left: 36%;
+  margin-right: 35%;
 
+}
 .counts .count-box {
   box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -765,7 +772,10 @@ section {
   transition: all ease-in-out 0.3s;
   background-color: #1c413b;
 }
-
+.row_services{
+  margin-left: 30%;
+  margin-right: 25%;
+}
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
@@ -897,15 +907,26 @@ section {
 
 
 /*################----Doctors----################*/
+
 .doctors {
   background: #000;
+}
+.section-title{
+   margin: 30%;
+}
+.doctor_box{
+  display: flex;
+  flex-wrap: wrap-reverse;
+ margin-left: 20%;
+ margin-right: 20%;
+  gap: 2rem;
 }
 
 .doctors .member {
   background: #111111;
   position: relative;
   border-radius: 10px;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .doctors .member .pic {
@@ -923,7 +944,7 @@ section {
 }
 
 .doctors .member .member-info {
-  padding-left: 30px;
+  /* padding-left: 30px; */
 }
 
 .doctors .member h4 {
